@@ -140,18 +140,28 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computerChoice = Math.floor(Math.random()*2);
-function game(user, computer) {
-  const Scissors = 0
-  const Rock = 1
-  const Paper = 2
-  if(user === Scissors && computer === Paper ){
-    return "you win!"
-  }else if(){
+let computerChoice = Math.floor(Math.random() * 3);
+const Scissors = 0;
+const Rock = 1;
+const Paper = 2;
 
+function game(user, computer) {
+  if (user === computer) return "it's a tie";
+  if (user === Scissors && computer === Paper) {
+    return "you win!";
+  } else if (user === Scissors && computer === Rock) {
+    return "you lose!";
+  } else if (user === Paper && computer === Rock) {
+    return "you win!";
+  } else if (user === Paper && computer === Scissors) {
+    return "you lose!";
+  } else if (user === Rock && computer === Scissors) {
+    return "you win!";
+  } else if (user === Rock && computer === Paper) {
+    return "you lose!";
   }
 }
-
+console.log(game(Scissors, computerChoice));
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Metric Converter
@@ -163,8 +173,8 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/) {
-  /*add your code here*/
+function miles(kilometers) {
+  return kilometers * 0.6214;
 }
 
 //Task 5b - Feet to CM
@@ -175,8 +185,8 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/) {
-  /*add your code here*/
+function feet(centimeters) {
+  return centimeters * 0.0328;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
