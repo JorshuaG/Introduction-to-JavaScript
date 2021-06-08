@@ -95,7 +95,6 @@ Use the hungryDog function and feeding requirements below to do the following:
 */
 
 function hungryDog(weight, age) {
-  /*add your code here*/
   if (age >= 1 && weight <= 5) {
     return weight * 0.05;
   } else if (age >= 1 && weight >= 6 && weight <= 10) {
