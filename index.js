@@ -17,7 +17,8 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 26;
+console.log(votingAge >= 18);
 /*
 Task 1b - Values
 
@@ -28,6 +29,10 @@ Do the following:
 
    HINT: no function required
 */
+let firstVariable = 31;
+let secondVariable = 13;
+firstVariable = secondVariable - 2;
+console.log(firstVariable);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -39,7 +44,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let string = "1999";
+string = parseInt(string);
+console.log(string);
 /*
 Task 1d - Multiply
  
@@ -49,8 +56,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/) {
-  /*add your code here*/
+function multiply(num1, num2) {
+  return num1 * num2;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -63,8 +70,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/) {
-  /*add your code here*/
+function dogYears(age) {
+  return age * 7;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -133,9 +140,16 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let computerChoice = Math.floor(Math.random()*2);
 function game(user, computer) {
-  /*add your code here*/
+  const Scissors = 0
+  const Rock = 1
+  const Paper = 2
+  if(user === Scissors && computer === Paper ){
+    return "you win!"
+  }else if(){
+
+  }
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
