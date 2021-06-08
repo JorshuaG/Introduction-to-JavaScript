@@ -44,9 +44,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-let string = "1999";
-string = parseInt(string);
-console.log(string);
+let year = "1999";
+year = Number(year);
+console.log(year);
 /*
 Task 1d - Multiply
  
@@ -202,12 +202,9 @@ Using the annoyingSong function below do the following:
 function annoyingSong(startNum) {
   let count = startNum;
   while (count >= 1) {
-    console.log(
-      `${count} bottles of soda on the wall, ${count} bottles of soda, take one down pass it around ${
-        count - 1
-      } bottles of soda on the wall`
-    );
-    count--;
+    return `${count} bottles of soda on the wall, ${count} bottles of soda, take one down pass it around ${
+      count - 1
+    } bottles of soda on the wall`;
   }
 }
 
